@@ -1,6 +1,6 @@
 Lab 2 Notebook
 
-Review Questions:
+ Review Questions:
 a) O servlet Container é responsavel por isolar um processo da aplicação, para correr processos em paralelo ou mesmo, só para criar uma vista dinamica. Isto é alcançado atraves de como o container responde ao pedido http, que lhe é enviado pela aplicação, onde o container irá chamar o servlet e correr este mesmo. Dado este servllet por terminado o container envia a resposta a aplicação.
 b) A maneira como o Spring Boot utiliza o modelo MVC, é atraves do uso de classes estaticas para os Models, nos exercicios anteriores são as classes Greeting e GreetingJSON, usa Controllers normalmente, atraves dos classes GreetingController e GreetingJSONController, mas na parte da View ja é diferente, pois o Spring Boot cria estas dinamicamente, usando os Controllers para gerar as Views.
 c) O objetivo das dependencias "starters" é fornecer as ferramentas basicas necessarias, para correr a aplicação como ferramentas Web apra desenvolvimento, como o servidor, nestes exercicios foi o tomcat e por fim forneceu testes para testar a aplicação.
