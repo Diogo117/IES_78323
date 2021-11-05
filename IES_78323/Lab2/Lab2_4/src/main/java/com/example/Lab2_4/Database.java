@@ -42,4 +42,13 @@ public class Database {
         public ArrayList getMovies(){
             return this.movies;
         }
+        
+        public Movie getMovie(int i){
+            if(this.movies.get(i)==null){
+                return new Movie(404,"error");
+            }else{
+                return (Movie) this.movies.get(i);
+            }
+            
+        }
 }

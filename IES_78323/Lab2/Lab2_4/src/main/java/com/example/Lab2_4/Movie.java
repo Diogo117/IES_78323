@@ -30,8 +30,20 @@ public class Movie {
 		return name;
 	}
         
+        public ArrayList getQuotes() {
+		return quotes;
+	}
         
         public void addQuote(String quote){
             this.quotes.add(quote);
+        }
+        
+         public String getQuote(int i){
+            if(this.quotes.get(i)==null){
+                return "error";
+            }else{
+                return (String) this.quotes.get(i);
+            }
+            
         }
 }
