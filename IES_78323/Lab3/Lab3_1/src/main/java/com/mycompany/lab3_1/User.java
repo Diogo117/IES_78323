@@ -27,18 +27,35 @@ public class User {
     
     @NotBlank(message = "Email is mandatory")
     private String email;
+    
+    //The reason for String on a phone number is because of region identifications.
+    private String phone;
 
     // standard constructors / setters / getters / toString
 
     public User() {
     }
 
-    
+    public User(String name, String email, String phone) {
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+    }
+
     public User(String name, String email) {
         this.name = name;
         this.email = email;
     }
 
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    
     public long getId() {
         return id;
     }
