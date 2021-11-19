@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.example.Lab3_3;
+package com.example.lab3_3;
 
 /**
  *
